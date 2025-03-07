@@ -1,0 +1,38 @@
+
+public class Method1 {
+
+	public static void main(String[] args) {
+		add();
+		int a = 20;
+		int b = 12;
+		mul(a,b);
+		int subRes = sub();
+		System.out.println(subRes);
+		int x = 50;
+		int y = 60;
+		int divRes = div(x,y);
+		System.out.println(divRes);
+
+	}
+	public static void add() {
+		int a = 10;
+		int b = 5;
+		int res = a + b;
+		System.out.println(res);
+	}
+    public static void mul(int a , int b) {
+    	int res = a * b;
+    	System.out.println(res);
+    	}
+    public static int sub() {
+        int a = 50;
+        int b = 100;
+    	int res = a - b;
+    	return res;
+    }
+    public static int div(int a , int b) {
+    	int res = a / b;
+    	return res;
+    }
+}
+
