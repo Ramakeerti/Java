@@ -1,0 +1,25 @@
+package Pract02;
+
+class Phone {
+	String modelName;
+	void sell() {
+		System.out.println("Phone name is: " + modelName);
+	}
+}
+class Product extends Phone {
+	String product;
+	void market() {
+		System.out.println(modelName + " is good product");
+	}
+}
+public class Main {
+	public static void main(String[] args) {
+		Product p1 = new Product();
+		p1.modelName = "Vivo S1 pro";
+		p1.product = "Phone";
+		System.out.println("Model Name: " + p1.modelName);
+		System.out.println("Product Type: " + p1.product);
+		p1.sell();
+		p1.market();
+	}
+}
