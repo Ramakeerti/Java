@@ -1,0 +1,28 @@
+
+public class Object {
+
+	public static void main(String[] args) {
+		Employee e = new Employee();
+		e.id = 12;
+		e.name = "Keerti";
+		e.salary=50000;
+		  System.out.println(e.id);
+		  System.out.println(e.name);
+		  System.out.println(e.salary);
+	    e.work();
+		e.attendMeeting();
+	}
+
+  public static class Employee {
+	  int id;
+	  String  name;
+	  int salary;
+	  void work() {
+	  System.out.println("Keerti is working");
+  }
+  
+	 void attendMeeting() {
+		 System.out.println("Keerti attending Meeting");
+	 }
+	}
+}
