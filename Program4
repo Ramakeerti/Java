@@ -1,0 +1,25 @@
+package Inheritance;
+class Vehicle {
+	int wheels = 4;
+	public void startEngine() {
+		System.out.println("Engine Started");
+	}
+}
+
+class Car extends Vehicle {
+	String carType = "BMW";
+	public void openTrunk() {
+		System.out.println("Trunck is opened");
+	}
+}
+public class Main {
+
+	public static void main(String[] args) {
+		Car car = new Car();
+		car.startEngine();
+		car.openTrunk();
+        System.out.println("Car type: " + car.carType + " with " + car.wheels + " wheels.");
+
+	}
+
+}
